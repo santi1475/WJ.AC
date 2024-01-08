@@ -2,4 +2,82 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.contacto-separador {
+  color: white;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  background-color: #204167;
+  height: 506px;
+}
+
+.contacto-separador .contenido {
+  padding: 6rem 8rem;
+}
+
+.contacto-separador h2 {
+  font-size: 64px;
+  padding-bottom: 4rem;
+}
+
+.contacto-separador p {
+  font-size: 22px;
+}
+
+.form-contacto {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  max-width: 510px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 25px;
+  border-radius: 20px;
+  background: #f8f8f8;
+  box-shadow: 2px 2px 15px 0px #cbcbcb;
+  margin-top: -80px;
+  margin-bottom: 20px;
+}
+
+.form__contenido {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.form__contenido label {
+  font-size: 18px;
+}
+
+.form__contenido input, .form__contenido select {
+  border-radius: 8px;
+  padding: 4px 8px;
+  height: 45px;
+  box-shadow: 2px 2px 15px 0px #919191;
+  border: none;
+  font-size: 18px;
+}
+
+.form__contenido select {
+  padding-right: 8px;
+}
+
+.contacto__boton {
+  background-color: #D1241F;
+  border-radius: 12px;
+  color: white;
+  padding: 4px 0;
+  border: none;
+  height: 45px;
+  transition: background-color 0.3s ease;
+  font-weight: 700;
+}
+
+.contacto__boton:hover {
+  background-color: #0C1928;
+  cursor: pointer;
 }

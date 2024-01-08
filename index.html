@@ -5,10 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
     <title>WJ Asesoría Empresarial</title>
 </head>
 <body>
-    
+
+
+
+
+	<section id="contacto">
+		<div class="contacto-separador">
+			<div class="contenido">
+				<h2>Contáctanos</h2>
+				<p>Estamos aquí para ayudarte. ¿Tienes preguntas, ideas o simplemente quieres charlar? No dudes en ponerte en contacto con nosotros. Estamos listos para escucharte y trabajar juntos para alcanzar tus objetivos.</p>
+			</div>
+			<div class="imagen">
+				<img src="imagenes/contacto.png" alt="Imagen contacto">
+			</div>
+		</div>
+
+		<form action="" class="form-contacto">
+			<div class="form__contenido">
+				<label for="nombres">Nombres</label>
+				<input type="text" name="nombres" id="" >
+			</div>
+			<div class="form__contenido">
+				<label for="apellidos">Apellidos</label>
+				<input type="text" name="apellidos" id="">
+			</div>
+			<div class="form__contenido">
+				<label for="empresa">Empresa</label>
+				<input type="text" name="empresa" id="" >
+			</div>
+			<div class="form__contenido">
+				<label for="correo">Correo electrónico</label>
+				<input type="text" name="correo" id="">
+			</div>
+			<div class="form__contenido">
+				<label for="servicio">Servicio</label>
+        <select name="servicio" id="">
+          <option value="" selected disabled>-- Seleccione --</option>
+          <option value="contable">Asesoría contable</option>
+          <option value="tributaria">Asesoría tributaria</option>
+          <option value="laboral">Asesoría laboral</option>
+        </select>
+			</div>
+
+      <button class="contacto__boton">Comunicarme con un asesor</button>
+		</form>
+	</section>
 </body>
 </html>
