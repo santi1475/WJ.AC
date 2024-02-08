@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="./script.js" defer></script>
     <title>WJ Asesoría Empresarial</title>
@@ -45,7 +46,7 @@
         <h1>Nuestros servicios</h1>
         <p>Te ayudamos en cada paso importante de tu empresa. Cuéntanos, ¿a qué le tienes miedo?</p>
         <div class="conteiner">
-            <div class="cardHijo">
+            <div class="cardHijo" data-aos="fade-right">
                 <h2>Contable</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illo. Porro ex omnis illo, 
                     quidem repellendus corporis velit. Dolores eaque ex facilis voluptate sunt eveniet
@@ -53,7 +54,7 @@
                 </p>
                 <button id="contable">Conoce mas</button>
             </div>
-            <div class="cardHijo">
+            <div class="cardHijo" data-aos="fade-left">
                 <h2>Consultoría</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illo. Porro ex omnis illo, 
                     quidem repellendus corporis velit. Dolores eaque ex facilis voluptate sunt eveniet
@@ -66,7 +67,7 @@
 
     <section class="testimonials">
         <h2>Testimonios</h2>
-        <figure class="testimonial">
+        <figure class="testimonial" data-aos="fade-up">
           <img src="./src/imgs/cliente1.jpg" alt="Foto1" class="client-photo">
           
           <blockquote>
@@ -75,7 +76,7 @@
           </blockquote>
         </figure>
     
-        <figure class="testimonial">
+        <figure class="testimonial" data-aos="fade-up">
           <blockquote>
             <figcaption class="client-name"><strong>Universidad Privada del Norte S.A.C.</strong></figcaption>
             <p>Vivamus sed condimentum nibh. Nullam urna lorem, hendrerit a diam nec, scelerisque pellentesque magna. Sed molestie, arcu laoreet tincidunt sagittis, lorem metus ullamcorper enim, fermentum varius augue erat ut odio. Nullam urna lorem, hendrerit a diam nec, scelerisque pellentesque magna. Sed molestie, arcu laoreet tincidunt sagittis</p>
@@ -83,7 +84,7 @@
           <img src="./src/imgs/cliente2.jpg" alt="Foto2" class="client-photo">
         </figure>
       
-        <figure class="testimonial">
+        <figure class="testimonial" data-aos="fade-up">
           <img src="./src/imgs/cliente3.jpg" alt="Foto3" class="client-photo">
           <blockquote>
             <figcaption class="client-name"><strong>Universidad Privada del Norte S.A.C.</strong></figcaption>
@@ -110,7 +111,7 @@
 		</div>
 
 
-		<form action="" class="form-contacto">
+		<form action="" class="form-contacto" data-aos="flip-left">
 			<div class="form__contenido">
 				<label for="nombres">Nombres</label>
 				<input type="text" name="nombres" id="" >
@@ -615,7 +616,13 @@
     </div>
   </section>
 
-
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
+    </script>
 
 
 
