@@ -37,6 +37,11 @@ body {
     gap: 20px;
 }
 
+#hero__bars {
+  display: none;
+  font-size: 20px;
+}
+
 .nav-list {
     display: flex;
     gap: 35px;
@@ -74,7 +79,8 @@ body {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    width: 705px;
+    width: 100%;
+    max-width: 705px;
 }
 
 .hero__text {
@@ -237,9 +243,15 @@ figure.testimonial:nth-child(even) p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 700px;
+    width: 90%;
+    max-width: 700px;
     height: 300px;
     margin-top: 50px;
+}
+
+img {
+  object-fit: cover;
+  height: 100%;
 }
 
 .contacto-separador h2 {
@@ -862,4 +874,162 @@ figure.testimonial:nth-child(even) p {
 
 .fa-whatsapp {
   font-size: 20px;
+}
+
+
+@media (width <= 1100px) {
+  .contacto-separador {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 50px 30px;
+    gap: 30px;
+  }
+
+  .contenido-text {
+    margin: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  .contacto-separador h2 {
+    margin: 20px 0;
+  }
+
+  .imagen {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+}
+
+@media (width <= 800px) {
+  #hero__bars{
+    display: block;
+  }
+
+  .nav-list {
+    display: none;
+  }
+
+
+  .testimonials {
+    margin: 30px;
+  }
+
+  figure.testimonial {
+    width: 100%;
+  }
+
+
+  .hero {
+    height: auto;
+    gap: 25px;
+    padding-bottom: 45px;
+  }
+
+  .hero__text {
+    font-size: unset;
+    padding: 0 30px;
+    margin-top: 0;
+  }
+
+  h1 {
+    padding: 0 30px;
+  }
+
+  .contacto-separador {
+    text-align: center;
+  }
+
+  .contacto-separador h2 {
+    font-size: 2em;
+    margin: 0;
+  }
+
+  .contacto-separador p {
+    font-size: unset;
+  }
+
+  .imagen {
+    width: 250px;
+    height: 250px;
+  }
+
+  .conteiner {
+    margin: 0;
+    gap: 24px;
+    padding-top: 24px;
+  }
+
+  .cardHijo {
+    margin: 0;
+    width: 100%;
+  }
+
+
+  .form-contacto {
+    width: 75%;
+    gap: 25px;
+    padding: 35px 25px;
+  }
+
+  .form__contenido label {
+    font-size: unset;
+  }
+
+  .form__contenido input, .form__contenido select {
+    height: auto;
+    padding: 10px;
+    font-size: unset;
+  }
+
+}
+
+@media (width <= 500px) {
+  .testimonials h2 {
+    margin-bottom: 45px;
+  }
+  figure.testimonial {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 45px;
+  }
+
+  figure.testimonial:nth-child(even) figcaption.client-name {
+    text-align: center;
+  }
+
+  figure.testimonial:nth-child(even) p {
+    text-align: center;
+  }
+
+  figure.testimonial:nth-child(odd) figcaption.client-name {
+    text-align: center;
+  }
+
+  figure.testimonial:nth-child(odd) p {
+    text-align: center;
+
+  }
+
+  figure.testimonial:nth-child(odd) img {
+    order: 1;
+  }
+
+  figure.testimonial:nth-child(odd) blockquote {
+    order: 2;
+  }
+
+  figure, blockquote {
+    margin: 0
+  }
+
+  blockquote {
+    margin-top: 15px;
+  }
+
 }
