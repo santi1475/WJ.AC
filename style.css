@@ -10,6 +10,10 @@ body {
     font-family: "Quicksand", sans-serif;
 }
 
+main {
+  overflow: hidden;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -874,6 +878,67 @@ img {
 
 .fa-whatsapp {
   font-size: 20px;
+}
+
+.menu {
+  width: 40%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 15px #d4d4d4;
+  padding: 30px 20px;
+  transform: translateX(105%);
+  transition: 0.3s;
+}
+
+.menu--active {
+  transform: translateX(0%);
+}
+
+.menu__ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu__li {
+  list-style: none;
+}
+
+.menu__a {
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  gap: 15px;
+  padding: 7px;
+  transition: 0.3s;
+}
+
+.menu__a--active {
+  font-weight: 700;
+  color: #204167;
+}
+
+.menu__button {
+  margin: 0 auto;
+  border-radius: 20px;
+  padding: 5px 13px;
+  background-color: transparent;
+  border: 2px solid #D1241F;
+  color: #D1241F;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: auto;
+}
+
+.menu .fa-xmark {
+  font-size: 18px;
 }
 
 

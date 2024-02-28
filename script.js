@@ -138,3 +138,38 @@ function formatearNumero(numero) {
         return parseFloat(numero.toFixed(2)).toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
     }
 }
+
+
+//
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(".menu__a");
+
+    function highlightNavLink() {
+        let index = sections.length;
+
+        while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        navLinks.forEach((link) => {
+            link.classList.remove("menu__a--active");
+
+        })
+        navLinks[index].classList.add("menu__a--active");
+    }
+
+    window.addEventListener("scroll", highlightNavLink);
+});
+
+const heroBars = document.querySelector("#hero__bars");
+const menuButton = document.querySelector(".menu__button");
+const menu = document.querySelector(".menu");
+
+heroBars.addEventListener("click", ()=>{
+    menu.classList.add("menu--active")
+})
+
+menuButton.addEventListener("click", ()=>{
+    menu.classList.remove("menu--active")
+})

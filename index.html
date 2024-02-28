@@ -18,34 +18,44 @@
 </head>
 <body>
 
+  <main>
     <section class="hero">
-        <header class="hero__header">
-            <nav class="hero__nav">
-                <div class="logo">
-                    <img src="./src/imgs/logo.png" alt="logo" class="logo__image">
-                </div>
-                
-                <ul class="nav-list">
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Nosotros</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Servicios</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Equipo</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Testimonios</a></li>
-                    <li class="nav-list__item"><a href="#" class="nav-list__link">Contacto</a></li>
-                </ul>
+      <header class="hero__header">
+          <nav class="hero__nav">
+              <div class="logo">
+                  <img src="./src/imgs/logo.png" alt="logo" class="logo__image">
+              </div>
+              
+              <ul class="nav-list">
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Nosotros</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Servicios</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Equipo</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Testimonios</a></li>
+                  <li class="nav-list__item"><a href="#" class="nav-list__link">Contacto</a></li>
+              </ul>
 
-                <i class="fa-solid fa-bars" id="hero__bars"></i>
-            </nav>
-        </header>
+              <i class="fa-solid fa-bars" id="hero__bars"></i>
+          </nav>
+      </header>
 
-        <div class="hero__description">
-            <h1 class="hero__title">¡Realiza tus tramites empresariales de forma <span class="highlight">rápida</span> y <span class="highlight">sencilla</span>!</h1>
-            <p class="hero__text">No dejes que los impuestos sean un dolor de cabeza, nosotros simplificamos el complejo mundo tributario para que tu empresa pueda centrarse en crecer. Descubre una nueva forma de enfrentar tus obligaciones fiscales de la SUNAT.</p>
-            <button class="hero__cta-button">Contáctanos</button>
-        </div>
+      <div class="hero__description">
+          <h1 class="hero__title">¡Realiza tus tramites empresariales de forma <span class="highlight">rápida</span> y <span class="highlight">sencilla</span>!</h1>
+          <p class="hero__text">No dejes que los impuestos sean un dolor de cabeza, nosotros simplificamos el complejo mundo tributario para que tu empresa pueda centrarse en crecer. Descubre una nueva forma de enfrentar tus obligaciones fiscales de la SUNAT.</p>
+          <button class="hero__cta-button">Contáctanos</button>
+      </div>
     </section>
 
-
-    
+    <section class="menu">
+      <ul class="menu__ul">
+        <li class="menu__li"><button class="menu__button"><i class="fa-solid fa-xmark"></i><span>Cerrar</span></button></li>
+        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-people-group"></i><span>Nosotros</span></a></li>
+        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-handshake-angle"></i><span>Servicios</span></a></li>
+        <!--<li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-users"></i><span>Equipo</span></a></li>-->
+        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-comments"></i><span>Testimonios</span></a></li>
+        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-phone"></i><span>Contacto</span></a></li>
+      </ul>
+    </section>
+  
     <section class="cardPadre">
         <h1>Nuestros servicios</h1>
         <p>Te ayudamos en cada paso importante de tu empresa. Cuéntanos, ¿a qué le tienes miedo?</p>
@@ -54,7 +64,7 @@
                 <h2>Contable</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illo. Porro ex omnis illo, 
                     quidem repellendus corporis velit. Dolores eaque ex facilis voluptate sunt eveniet
-                     eligendi praesentium quas unde recusandae!
+                    eligendi praesentium quas unde recusandae!
                 </p>
                 <button id="contable">Conoce mas</button>
             </div>
@@ -62,7 +72,7 @@
                 <h2>Consultoría</h2>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem, illo. Porro ex omnis illo, 
                     quidem repellendus corporis velit. Dolores eaque ex facilis voluptate sunt eveniet
-                     eligendi praesentium quas unde recusandae!
+                    eligendi praesentium quas unde recusandae!
                 </p>
                 <button id="consultoria">Conoce mas</button>
             </div>
@@ -100,54 +110,54 @@
     <section id="contacto">
 
 
-		<div class="contacto-separador">
-			<div class="contenido">
+    <div class="contacto-separador">
+      <div class="contenido">
 
                 <div class="contenido-text">
                     <h2>Contáctanos</h2>
                     <p>Estamos aquí para ayudarte. ¿Tienes preguntas, ideas o simplemente quieres charlar? No dudes en ponerte en contacto con nosotros. Estamos listos para escucharte y trabajar juntos para alcanzar tus objetivos.</p>
                 </div>
-			</div>
-			<div class="imagen">
-				<img src="./src/imgs/bg-contacto.jpg" alt="Imagen contacto">
+      </div>
+      <div class="imagen">
+        <img src="./src/imgs/bg-contacto.jpg" alt="Imagen contacto">
                 
-			</div>
-		</div>
+      </div>
+    </div>
 
 
-		<form action="" class="form-contacto" data-aos="flip-left">
-			<div class="form__contenido">
-				<label for="nombres">Nombres</label>
-				<input type="text" name="nombres" id="" >
-			</div>
-			<div class="form__contenido">
-				<label for="apellidos">Apellidos</label>
-				<input type="text" name="apellidos" id="">
-			</div>
-			<div class="form__contenido">
-				<label for="empresa">Empresa</label>
-				<input type="text" name="empresa" id="" >
-			</div>
-			<div class="form__contenido">
-				<label for="correo">Correo electrónico</label>
-				<input type="text" name="correo" id="">
-			</div>
-			<div class="form__contenido">
-				<label for="servicio">Servicio</label>
+    <form action="" class="form-contacto" data-aos="flip-left">
+      <div class="form__contenido">
+        <label for="nombres">Nombres</label>
+        <input type="text" name="nombres" id="" >
+      </div>
+      <div class="form__contenido">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="">
+      </div>
+      <div class="form__contenido">
+        <label for="empresa">Empresa</label>
+        <input type="text" name="empresa" id="" >
+      </div>
+      <div class="form__contenido">
+        <label for="correo">Correo electrónico</label>
+        <input type="text" name="correo" id="">
+      </div>
+      <div class="form__contenido">
+        <label for="servicio">Servicio</label>
         <select name="servicio" id="">
           <option value="" selected disabled>-- Seleccione --</option>
           <option value="contable">Asesoría contable</option>
           <option value="tributaria">Asesoría tributaria</option>
           <option value="laboral">Asesoría laboral</option>
         </select>
-			</div>
+      </div>
 
       <button class="contacto__boton">Comunicarme con un asesor</button>
-		</form>
+    </form>
 
-	</section>
+    </section>
 
-  <section class="popUp popUpContable">
+  <div class="popUp popUpContable">
     <div class="popUp__contenedor">
       <div class="popUp__contenido">
         <div class="dropdown">
@@ -169,7 +179,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -189,7 +199,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -205,7 +215,7 @@
           <div class="dropdown__collapse">
             <div class="dropdown__desplegable">
               <!-- Tu codigo aquí-->
-              <section class="portada">
+              <div class="portada">
                 <div class="portada__contenido">
                   <h3 class="portada__h3">Sé amigo de la SUNAT y sus facturas, con nosotros</h3>
                   <p class="portada__p">Mejoraremos la economía de tu negocio haciendo un correcto control y manejo de las finanzas de la empresa. Te asesoramos para que no te endeudes y llegues a un caso extremo de banca rota.</p>
@@ -217,9 +227,9 @@
                 <picture>
 
                 </picture>
-              </section>
+              </div>
 
-              <section class="sectIgv">
+              <div class="sectIgv">
                 <div class="sectIgv__titulo">
                   <h3 class="sectIgv__h3">Sistemas Administrativos del IGV</h3>
                   <span>Descubre como funciona</span>
@@ -418,7 +428,7 @@
                     </div>
                   </div>
                 </div>
-              </section>
+              </div>
             </div>
           </div>
         </div>
@@ -428,9 +438,9 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-  </section>
+  </div>
 
-  <section class="popUp popUpConsultoria">
+  <div class="popUp popUpConsultoria">
     <div class="popUp__contenedor">
       <div class="popUp__contenido">
         <div class="dropdown">
@@ -452,7 +462,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -472,7 +482,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -492,7 +502,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -512,7 +522,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -552,7 +562,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -572,7 +582,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="dropdown">
           <div class="dropdown__fondo">
             <div class="dropdown__item">
@@ -618,7 +628,8 @@
         <i class="fa-solid fa-xmark"></i>
       </button>
     </div>
-  </section>
+  </div>
+  </main>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
