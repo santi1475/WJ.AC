@@ -120,23 +120,33 @@ main {
 }
 
 .cardPadre {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    flex-direction: column;
-    text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: column;
+  text-align: center;
+}
+
+.cardPadre h1{
+  margin:none;
+}
+
+.Ppadre{
+  font-size: 2.5rem;
+  color: #204167;
+  width: 70%;
 }
 
 .conteiner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-    flex-direction: row;
-    gap: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  flex-direction: row;
+  gap: 50px;
 }
 
 .cardHijo {
@@ -190,12 +200,12 @@ figure.testimonial {
 }
 
 img.client-photo {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 blockquote {
@@ -939,6 +949,48 @@ img {
 
 .menu .fa-xmark {
   font-size: 18px;
+}
+
+.whatsapp-button-container {
+  border-radius: 20px;
+  padding: 10px 20px;
+  background-color: #01d26a;;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  color: white;
+  position: fixed;
+  bottom: 60px;
+  right: 3%;
+  z-index: 100;
+  transition: all 0.3s ease;
+  transform: scale(1);
+  font-size: 20px;
+  -webkit-box-shadow: 0px 20px 5px 0px rgba(1,141,75,1);
+  -moz-box-shadow: 0px 20px 5px 0px rgba(1,141,75,1);
+  box-shadow: 0px 10px 5px 0px rgba(1,141,75,1);
+}
+
+.fa-whatsapp {
+  font-size: 30px;
+}
+
+.whatsapp-button-container__text {
+  margin-left: 10px;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .whatsapp-button-container__text {
+    display: none;
+  }
+
+  .whatsapp-button-container {
+    right: 3%;
+    padding: 10px 15px;
+  }
 }
 
 

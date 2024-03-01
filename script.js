@@ -173,3 +173,14 @@ heroBars.addEventListener("click", ()=>{
 menuButton.addEventListener("click", ()=>{
     menu.classList.remove("menu--active")
 })
+
+const whatsappButton = this.document.querySelector(".whatsapp-button-container");
+
+this.window.addEventListener("scroll", function() {
+  whatsappButton.style.transform = 'scale(0)';
+
+});
+
+this.window.addEventListener("scrollend", function() {
+  whatsappButton.style.transform = 'scale(1)';
+});
