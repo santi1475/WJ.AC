@@ -184,3 +184,42 @@ this.window.addEventListener("scroll", function() {
 this.window.addEventListener("scrollend", function() {
   whatsappButton.style.transform = 'scale(1)';
 });
+
+
+document.addEventListener("DOMContentLoaded", ()=>{
+    
+const cardDinamica = document.querySelectorAll(".cardDinamica");
+
+
+
+for(let i=0; i<cardDinamica.length; i++) {
+    let cardDinamicaBackground = cardDinamica[i].querySelectorAll(".cardDinamica__background");
+
+    let cardDinamica__i = cardDinamica[i].querySelector(".cardDinamica__i");
+
+    cardDinamica__i.style.transform = `translateY(${cardDinamica[i].scrollHeight/2}px)`
+
+    console.log(`${cardDinamica[i].scrollHeight}`);
+    
+    cardDinamica[i].addEventListener('mouseleave', function mouseleave() {
+        cardDinamica__i.style.transform = `translateY(${cardDinamica[i].scrollHeight/2}px)`
+
+        cardDinamica__i.style.color = `var(--blanco)`
+        
+        for(let f=0; f<cardDinamicaBackground.length; f++) {
+            cardDinamicaBackground[f].style.background = `#000`;
+            cardDinamicaBackground[f].style.height = `${cardDinamica[i].scrollHeight}px`;
+        }
+    });
+
+    cardDinamica[i].addEventListener('mouseenter', function mouseenter() {
+        cardDinamica__i.style.transform = `translateY(0px)`
+        cardDinamica__i.style.color = `var(--negro)`;
+            for(let f=0; f<cardDinamicaBackground.length; f++) {
+                cardDinamicaBackground[f].style.background = `linear-gradient(135deg, rgba(209,36,31,1) 0%, rgba(32,65,103,1) 90%)`;
+                cardDinamicaBackground[f].style.height = `${cardDinamica[i].scrollHeight}px`;
+            }
+    });
+
+}
+})
