@@ -365,6 +365,7 @@ img {
     transform: translateY(-150%);
     transition: 0.5s;
     padding: 50px 40px;
+    overflow-y: auto;
 }
 
 .popUp__contenido {
