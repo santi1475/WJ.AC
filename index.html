@@ -1,462 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
-    <script src="./script.js" defer></script>
-    <title>WJ Asesoría Empresarial</title>
 
-    <!-- ICONOS -->
-    <script src="https://kit.fontawesome.com/745852fa0a.js" crossorigin="anonymous"></script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&display=swap" rel="stylesheet">
+  <script src="./script.js" defer></script>
+  <title>WJ Asesoría Empresarial</title>
+
+  <!-- ICONOS -->
+  <script src="https://kit.fontawesome.com/745852fa0a.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('75T_5BQKPTC4YYMqK')
+  </script>
 
 </head>
+
 <body>
 
   <main>
     <section class="hero">
       <header class="hero__header">
-          <nav class="hero__nav">
-              <div class="logo">
-                  <img src="./src/imgs/logo.png" alt="logo" class="logo__image">
-              </div>
-              
-              <ul class="nav-list">
-                  <li class="nav-list__item"><a href="#1" class="nav-list__link">Nosotros</a></li>
-                  <li class="nav-list__item"><a href="#2" class="nav-list__link">Servicios</a></li>
-                  <li class="nav-list__item"><a href="#3" class="nav-list__link">Testimonios</a></li>
-                  <li class="nav-list__item"><a href="#contacto" class="nav-list__link">Contacto</a></li>
-              </ul>
+        <nav class="hero__nav">
+          <div class="logo">
+            <img src="./src/imgs/logo.png" alt="logo" class="logo__image">
+          </div>
 
-              <i class="fa-solid fa-bars" id="hero__bars"></i>
-          </nav>
+          <ul class="nav-list">
+            <li class="nav-list__item"><a href="#1" class="nav-list__link">Nosotros</a></li>
+            <li class="nav-list__item"><a href="#2" class="nav-list__link">Servicios</a></li>
+            <li class="nav-list__item"><a href="#3" class="nav-list__link">Testimonios</a></li>
+            <li class="nav-list__item"><a href="#contacto" class="nav-list__link">Contacto</a></li>
+          </ul>
+
+          <i class="fa-solid fa-bars" id="hero__bars"></i>
+        </nav>
       </header>
 
       <div class="hero__description" id="1">
-          <h1 class="hero__title">¡Realiza tus tramites empresariales de forma <span class="highlight">rápida</span> y <span class="highlight">sencilla</span>!</h1>
-          <p class="hero__text">No dejes que los impuestos sean un dolor de cabeza, nosotros simplificamos el complejo mundo tributario para que tu empresa pueda centrarse en crecer. Descubre una nueva forma de enfrentar tus obligaciones fiscales de la SUNAT.</p>
-          <button class="hero__cta-button">Contáctanos</button>
+        <h1 class="hero__title">¡Realiza tus tramites empresariales de forma <span class="highlight">rápida</span> y
+          <span class="highlight">sencilla</span>!</h1>
+        <p class="hero__text">No dejes que los impuestos sean un dolor de cabeza, nosotros simplificamos el complejo
+          mundo tributario para que tu empresa pueda centrarse en crecer. Descubre una nueva forma de enfrentar tus
+          obligaciones fiscales de la SUNAT.</p>
+        <button class="hero__cta-button">Contáctanos</button>
       </div>
     </section>
 
     <section class="menu">
       <ul class="menu__ul">
-        <li class="menu__li"><button class="menu__button"><i class="fa-solid fa-xmark"></i><span>Cerrar</span></button></li>
-        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-people-group"></i><span>Nosotros</span></a></li>
-        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-handshake-angle"></i><span>Servicios</span></a></li>
-        <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-comments"></i><span>Testimonios</span></a></li>
+        <li class="menu__li"><button class="menu__button"><i class="fa-solid fa-xmark"></i><span>Cerrar</span></button>
+        </li>
+        <li class="menu__li"><a href="#" class="menu__a"><i
+              class="fa-solid fa-people-group"></i><span>Nosotros</span></a></li>
+        <li class="menu__li"><a href="#" class="menu__a"><i
+              class="fa-solid fa-handshake-angle"></i><span>Servicios</span></a></li>
+        <li class="menu__li"><a href="#" class="menu__a"><i
+              class="fa-solid fa-comments"></i><span>Testimonios</span></a></li>
         <li class="menu__li"><a href="#" class="menu__a"><i class="fa-solid fa-phone"></i><span>Contacto</span></a></li>
       </ul>
     </section>
-  
+
     <section class="cardPadre" id="2">
       <div class="Ppadre">
         <p>Te ayudamos en cada paso importante de tu empresa. Cuéntanos, ¿a qué le tienes miedo?</p>
       </div>
       <h1>Nuestros servicios</h1>
       <div class="conteiner">
-          <div class="cardHijo" data-aos="fade-right">
-              <h2>Contable</h2>
-              <p>Con nosotros puede llevar un control de sus finanzas de manera eficiente y segura. 
-                  Nos encargamos de la contabilidad de su empresa, para que usted pueda enfocarse en su negocio.
-              </p>
-              <button id="contable">Conoce mas</button>
-          </div>
-          <div class="cardHijo" data-aos="fade-left">
-              <h2>Consultoría</h2>
-              <p>Formalice su empresa para poder emprender en el mercado laboral, le ayudamos con su creacion y despliegue,
-                asegurando que cumpla con todas las normativas legales.
-              </p>
-              <button id="consultoria">Conoce mas</button>
-          </div>
+        <div class="cardHijo" data-aos="fade-right">
+          <h2>Contable</h2>
+          <p>Con nosotros puede llevar un control de sus finanzas de manera eficiente y segura.
+            Nos encargamos de la contabilidad de su empresa, para que usted pueda enfocarse en su negocio.
+          </p>
+          <button id="contable">Conoce mas</button>
+        </div>
+        <div class="cardHijo" data-aos="fade-left">
+          <h2>Consultoría</h2>
+          <p>Formalice su empresa para poder emprender en el mercado laboral, le ayudamos con su creacion y despliegue,
+            asegurando que cumpla con todas las normativas legales.
+          </p>
+          <button id="consultoria">Conoce mas</button>
+        </div>
       </div>
-  </section>
+    </section>
 
-  <section class="testimonials" id="3">
-    <h2>Testimonios</h2>
-    <figure class="testimonial" data-aos="fade-up">
-      <img src="./src/imgs/cliente1.jpg" alt="Foto1" class="client-photo">
-      
-      <blockquote>
-        <figcaption class="client-name"><strong>Juan Pérez, Empresario:</strong></figcaption>
-        <p>"Contraté sus servicios de asesoría tributaria y estoy muy satisfecho. Me ayudaron a entender mejor mis obligaciones fiscales, optimizando nuestros impuestos y asegurando el cumplimiento normativo. Un equipo comprometido y profesional que ha marcado la diferencia en la gestión financiera de mi empresa."</p>
-      </blockquote>
-    </figure>
+    <section class="testimonials" id="3">
+      <h2>Testimonios</h2>
+      <figure class="testimonial" data-aos="fade-up">
+        <img src="./src/imgs/cliente1.jpg" alt="Foto1" class="client-photo">
 
-    <figure class="testimonial" data-aos="fade-up">
-      <blockquote>
-        <figcaption class="client-name"><strong>María Rodríguez, Dueña de Pequeño Negocio:</strong></figcaption>
-        <p>"¡Excelente asesoría tributaria! Me orientaron en cada paso, desde la declaración del Impuesto a la Renta hasta la gestión del IGV. Su enfoque personalizado hizo que todo fuera claro y fácil de seguir. Gracias a ellos, mi pequeño negocio está al día con todas las obligaciones tributarias."</p>
-      </blockquote>
-      <img src="./src/imgs/cliente2.jpg" alt="Foto2" class="client-photo">
-    </figure>
-  
-    <figure class="testimonial" data-aos="fade-up">
-      <img src="./src/imgs/cliente3.jpg" alt="Foto3" class="client-photo">
-      <blockquote>
-        <figcaption class="client-name"><strong>Carlos Gómez, Nuevo Empresario:</strong></figcaption>
-        <p>>"Iniciar mi propio negocio era un sueño, pero la formalización me preocupaba. Gracias a la asesoría tributaria, el proceso fue mucho más simple. Me guiaron en cada trámite, desde la elección de la estructura legal hasta la gestión de impuestos. Ahora, mi empresa está formalizada, cumpliendo con todas las normativas y listos para crecer. ¡Totalmente recomendados para quienes buscan formalizar su emprendimiento!"</p>
-      </blockquote>
-    </figure>
-  </section>
+        <blockquote>
+          <figcaption class="client-name"><strong>Juan Pérez, Empresario:</strong></figcaption>
+          <p>"Contraté sus servicios de asesoría tributaria y estoy muy satisfecho. Me ayudaron a entender mejor mis
+            obligaciones fiscales, optimizando nuestros impuestos y asegurando el cumplimiento normativo. Un equipo
+            comprometido y profesional que ha marcado la diferencia en la gestión financiera de mi empresa."</p>
+        </blockquote>
+      </figure>
+
+      <figure class="testimonial" data-aos="fade-up">
+        <blockquote>
+          <figcaption class="client-name"><strong>María Rodríguez, Dueña de Pequeño Negocio:</strong></figcaption>
+          <p>"¡Excelente asesoría tributaria! Me orientaron en cada paso, desde la declaración del Impuesto a la Renta
+            hasta la gestión del IGV. Su enfoque personalizado hizo que todo fuera claro y fácil de seguir. Gracias a
+            ellos, mi pequeño negocio está al día con todas las obligaciones tributarias."</p>
+        </blockquote>
+        <img src="./src/imgs/cliente2.jpg" alt="Foto2" class="client-photo">
+      </figure>
+
+      <figure class="testimonial" data-aos="fade-up">
+        <img src="./src/imgs/cliente3.jpg" alt="Foto3" class="client-photo">
+        <blockquote>
+          <figcaption class="client-name"><strong>Carlos Gómez, Nuevo Empresario:</strong></figcaption>
+          <p>>"Iniciar mi propio negocio era un sueño, pero la formalización me preocupaba. Gracias a la asesoría
+            tributaria, el proceso fue mucho más simple. Me guiaron en cada trámite, desde la elección de la estructura
+            legal hasta la gestión de impuestos. Ahora, mi empresa está formalizada, cumpliendo con todas las normativas
+            y listos para crecer. ¡Totalmente recomendados para quienes buscan formalizar su emprendimiento!"</p>
+        </blockquote>
+      </figure>
+    </section>
 
     <section id="contacto">
 
 
-    <div class="contacto-separador">
-      <div class="contenido">
+      <div class="contacto-separador">
+        <div class="contenido">
 
-                <div class="contenido-text">
-                    <h2>Contáctanos</h2>
-                    <p>Estamos aquí para ayudarte. ¿Tienes preguntas, ideas o simplemente quieres charlar? No dudes en ponerte en contacto con nosotros. Estamos listos para escucharte y trabajar juntos para alcanzar tus objetivos.</p>
-                </div>
-      </div>
-      <div class="imagen">
-        <img src="./src/imgs/bg-contacto.jpg" alt="Imagen contacto">
-                
-      </div>
-    </div>
+          <div class="contenido-text">
+            <h2>Contáctanos</h2>
+            <p>Estamos aquí para ayudarte. ¿Tienes preguntas, ideas o simplemente quieres charlar? No dudes en ponerte
+              en contacto con nosotros. Estamos listos para escucharte y trabajar juntos para alcanzar tus objetivos.
+            </p>
+          </div>
+        </div>
+        <div class="imagen">
+          <img src="./src/imgs/bg-contacto.jpg" alt="Imagen contacto">
 
-
-    <form action="" class="form-contacto" data-aos="flip-left">
-      <div class="form__contenido">
-        <label for="nombres">Nombres</label>
-        <input type="text" name="nombres" id="" >
-      </div>
-      <div class="form__contenido">
-        <label for="apellidos">Apellidos</label>
-        <input type="text" name="apellidos" id="">
-      </div>
-      <div class="form__contenido">
-        <label for="empresa">Empresa</label>
-        <input type="text" name="empresa" id="" >
-      </div>
-      <div class="form__contenido">
-        <label for="correo">Correo electrónico</label>
-        <input type="text" name="correo" id="">
-      </div>
-      <div class="form__contenido">
-        <label for="servicio">Servicio</label>
-        <select name="servicio" id="">
-          <option value="" selected disabled>-- Seleccione --</option>
-          <option value="contable">Asesoría contable</option>
-          <option value="tributaria">Asesoría tributaria</option>
-          <option value="laboral">Asesoría laboral</option>
-          <option value="constempre">Constitución de empresas y/o sociedades</option>
-          <option value="aumento">Aumento de capital</option>
-          <option value="liquidacion">Liquidación de empresas y/o sociedades</option>
-          <option value="transferencia">Transferencias de acciones</option>
-          <option value="asesoria">Asesoría empresarial</option>
-          <option value="const">Constitución de Empresas</option>
-          <option value="compra">Compra/venta de empresass</option>
-          <option value="remosion">Remoción de Gerencia</option>
-          <option value="gestión">Gestión de Activos</option>
-        </select>
+        </div>
       </div>
 
-      <button class="contacto__boton">Comunicarme con un asesor</button>
-    </form>
+
+      <form id="form" action="" class="form-contacto" data-aos="flip-left">
+        <div class="form__contenido">
+          <label for="nombres">Nombres</label>
+          <input type="text" name="nombres" id="nombres">
+        </div>
+        <div class="form__contenido">
+          <label for="apellidos">Apellidos</label>
+          <input type="text" name="apellidos" id="apellidos">
+        </div>
+        <div class="form__contenido">
+          <label for="empresa">Empresa</label>
+          <input type="text" name="empresa" id="empresa">
+        </div>
+        <div class="form__contenido">
+          <label for="correo">Correo electrónico</label>
+          <input type="email" name="correo" id="correo" required>
+        </div>
+        <div class="form__contenido">
+          <label for="servicio">Servicio</label>
+          <select name="servicio" id="servicio" required>
+            <option value="" selected disabled>-- Seleccione --</option>
+            <option value="Asesoría contable">Asesoría contable</option>
+            <option value="Asesoría tributaria">Asesoría tributaria</option>
+            <option value="Asesoría laboral">Asesoría laboral</option>
+            <option value="Constitución de empresas y/o sociedades">Constitución de empresas y/o sociedades</option>
+            <option value="Aumento de capital">Aumento de capital</option>
+            <option value="Liquidación de empresas y/o sociedades">Liquidación de empresas y/o sociedades</option>
+            <option value="Transferencias de acciones">Transferencias de acciones</option>
+            <option value="Asesoría empresarial">Asesoría empresarial</option>
+            <option value="Constitución de Empresas">Constitución de Empresas</option>
+            <option value="Compra/venta de empresas">Compra/venta de empresas</option>
+            <option value="Remoción de Gerencia">Remoción de Gerencia</option>
+            <option value="Gestión de Activos">Gestión de Activos</option>
+          </select>
+        </div>
+
+        <button id="button" class="contacto__boton">Comunicarme con un asesor</button>
+      </form>
 
     </section>
 
-  <div class="popUp popUpContable">
-    <div class="popUp__contenedor">
-      <div class="popUp__contenido">
+    <div class="popUp popUpContable">
+      <div class="popUp__contenedor">
+        <div class="popUp__contenido">
 
-        <div class="cardDinamica">
+          <div class="cardDinamica">
 
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-dollar-sign cardDinamica__i"></i>
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-dollar-sign cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Contable Financiera</h3>
+              <p class="cardDinamica__p">Descubre el poder de una asesoría contable y financiera de calidad. En WJ
+                Asesoría Empresarial, te ofrecemos soluciones personalizadas para gestionar tus libros contables,
+                optimizar tus impuestos y planificar tus finanzas con éxito. </p>
+            </div>
           </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Contable Tributaria</h3>
+              <p class="cardDinamica__p">Potencia tu negocio con nuestra asesoría tributaria de calidad. En WJ Asesoría
+                Empresarial, te ofrecemos soluciones personalizadas para cumplir con las normativas fiscales y optimizar
+                tu situación frente a la Sunat.</p>
+            </div>
           </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-person cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Contable Laboral</h3>
+              <p class="cardDinamica__p">Prepara contrataciones sólidas con nuestra asesoría laboral. En WJ Asesoría
+                Empresarial, te ayudamos a elegir las mejores opciones de contratación, respaldadas por las regulaciones
+                de SUNAFIL.</p>
+            </div>
           </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Contable Financiera</h3>
-            <p class="cardDinamica__p">Descubre el poder de una asesoría contable y financiera de calidad. En WJ Asesoría Empresarial, te ofrecemos soluciones personalizadas para gestionar tus libros contables, optimizar tus impuestos y planificar tus finanzas con éxito. </p>
-          </div>
+
         </div>
 
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Contable Tributaria</h3>
-            <p class="cardDinamica__p">Potencia tu negocio con nuestra asesoría tributaria de calidad. En WJ Asesoría Empresarial, te ofrecemos soluciones personalizadas para cumplir con las normativas fiscales y optimizar tu situación frente a la Sunat.</p>
-          </div>
-        </div>
-
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-person cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Contable Laboral</h3>
-            <p class="cardDinamica__p">Prepara contrataciones sólidas con nuestra asesoría laboral. En WJ Asesoría Empresarial, te ayudamos a elegir las mejores opciones de contratación, respaldadas por las regulaciones de SUNAFIL.</p>
-          </div>
-        </div>
-
+        <button class="popUp__btnCerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-
-      <button class="popUp__btnCerrar">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
     </div>
-  </div>
 
-  <div class="popUp popUpConsultoria">
-    <div class="popUp__contenedor">
-      <div class="popUp__contenido">
+    <div class="popUp popUpConsultoria">
+      <div class="popUp__contenedor">
+        <div class="popUp__contenido">
 
-        <div class="cardDinamica">
+          <div class="cardDinamica">
 
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Constitución de empresas y/o sociedades</h3>
+              <p class="cardDinamica__p">Nuestra consultoría va más allá de simplemente cumplir con los requisitos
+                legales. Nos sumergimos en cada detalle para comprender las necesidades específicas de tu negocio. Desde
+                la elección del tipo de entidad hasta la preparación de documentos y la inscripción, nuestro equipo te
+                guiará, asegurándose de que cada paso sea estratégico y acorde con tus metas empresariales. Confía en
+                nosotros para establecer una base sólida para tu éxito.
+              <p>
+            </div>
           </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Aumento de capital</h3>
+              <p class="cardDinamica__p">En el competitivo mundo empresarial, el aumento de capital es esencial para el
+                crecimiento sostenible. Nuestros servicios van más allá de los aspectos financieros, incluyendo la
+                evaluación de riesgos, la identificación de oportunidades de inversión y la implementación de
+                estrategias que fortalezcan tu posición en el mercado. Confía en nuestro equipo para guiarte en la toma
+                de decisiones financieras clave que impulsen el desarrollo y la estabilidad de tu empresa.
+              <p>
+            </div>
           </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Liquidación de empresas y/o sociedades</h3>
+              <p class="cardDinamica__p">La decisión de cerrar una empresa es crucial y requiere un enfoque experto.
+                Nuestra consultoría ofrece un proceso de liquidación meticuloso, asegurando que cada detalle se maneje
+                conforme a las normativas legales. Desde la evaluación de activos hasta la distribución de ganancias, te
+                acompañamos en cada paso, garantizando transparencia y eficiencia durante todo el proceso de cierre
+                empresarial.
+              <p>
+            </div>
           </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Constitución de empresas y/o sociedades</h3>
-            <p class="cardDinamica__p">Nuestra consultoría va más allá de simplemente cumplir con los requisitos legales. Nos sumergimos en cada detalle para comprender las necesidades específicas de tu negocio. Desde la elección del tipo de entidad hasta la preparación de documentos y la inscripción, nuestro equipo te guiará, asegurándose de que cada paso sea estratégico y acorde con tus metas empresariales. Confía en nosotros para establecer una base sólida para tu éxito.<p>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Transferencias de acciones</h3>
+              <p class="cardDinamica__p">Facilitamos las transferencias de acciones con un enfoque seguro y eficiente.
+                Nuestro equipo experto maneja todos los aspectos del proceso, desde la evaluación de la valoración de
+                acciones hasta la documentación legal. Garantizamos transacciones fluidas y seguras, permitiéndote
+                optimizar la estructura de propiedad de tu empresa con confianza.
+              <p>
+            </div>
           </div>
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Asesoría empresarial</h3>
+              <p class="cardDinamica__p">Nuestra asesoría empresarial va más allá de las cifras; es un compromiso con tu
+                éxito a largo plazo. Desde el análisis financiero hasta la planificación estratégica, nuestro equipo de
+                expertos colabora contigo para identificar oportunidades, mitigar riesgos y optimizar tus operaciones.
+                Confía en nosotros para ser tu socio estratégico, ofreciéndote la orientación necesaria para alcanzar
+                tus objetivos empresarialesOfrecemos asesoría integral para el éxito de tu empresa, desde análisis
+                financiero hasta planificación estratégica. Nuestro equipo de expertos es tu socio estratégico,
+                brindándote la guía necesaria para alcanzar tus objetivos empresariales. Confía en nosotros para
+                optimizar tus operaciones y asegurar un futuro exitoso.
+              <p>
+            </div>
+          </div>
+
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Constitución de Empresas</h3>
+              <p class="cardDinamica__p">Convierte ideas en empresas sólidas con nuestra experiencia desde la concepción
+                hasta la formalización. Simplificamos la creación de tu empresa, liberándote de complicaciones
+                administrativas para que te enfoques en construir tu legado empresarial con confianza.</p>
+            </div>
+          </div>
+
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Compra/venta de empresas</h3>
+              <p class="cardDinamica__p">Explora oportunidades empresariales ilimitadas con nosotros. Simplificamos
+                compras y ventas de empresas, fusionando sueños y realidades. Cada transacción es un paso hacia un
+                futuro próspero, respaldado por nuestra experiencia y compromiso.</p>
+            </div>
+          </div>
+
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Remoción de Gerencia</h3>
+              <p class="cardDinamica__p">Impulsa un cambio positivo en tu empresa. Removemos gerencias catalizando
+                transformaciones beneficiosas. Toma decisiones audaces para un nuevo comienzo estratégico.</p>
+            </div>
+          </div>
+
+
+          <div class="cardDinamica">
+
+            <div class="cardDinamica__circulo">
+              <i class="fa-solid fa-coins cardDinamica__i"></i>
+            </div>
+            <div class="cardDinamica__circulo--negro"></div>
+
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
+              <div class="cardDinamica__background"></div>
+            </div>
+            <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
+              <div class="cardDinamica__background cardDinamica__background--2"></div>
+            </div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
+            <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
+
+            <div class="cardDinamica__contenido">
+              <h3 class="cardDinamica__h3">Gestión de Activos</h3>
+              <p class="cardDinamica__p">Confía en nosotros para optimizar y salvaguardar tu riqueza. Nuestra gestión de
+                activos va más allá de los números, es un compromiso con tu seguridad financiera. Con estrategias
+                personalizadas, protegemos tus activos, guiándote hacia un futuro financiero próspero y seguro.</p>
+            </div>
+          </div>
+
         </div>
-      
-        <div class="cardDinamica">
 
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Aumento de capital</h3>
-            <p class="cardDinamica__p">En el competitivo mundo empresarial, el aumento de capital es esencial para el crecimiento sostenible. Nuestros servicios van más allá de los aspectos financieros, incluyendo la evaluación de riesgos, la identificación de oportunidades de inversión y la implementación de estrategias que fortalezcan tu posición en el mercado. Confía en nuestro equipo para guiarte en la toma de decisiones financieras clave que impulsen el desarrollo y la estabilidad de tu empresa.<p>
-          </div>
-        </div>
-      
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Liquidación de empresas y/o sociedades</h3>
-            <p class="cardDinamica__p">La decisión de cerrar una empresa es crucial y requiere un enfoque experto. Nuestra consultoría ofrece un proceso de liquidación meticuloso, asegurando que cada detalle se maneje conforme a las normativas legales. Desde la evaluación de activos hasta la distribución de ganancias, te acompañamos en cada paso, garantizando transparencia y eficiencia durante todo el proceso de cierre empresarial.<p>
-          </div>
-        </div>
-      
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Transferencias de acciones</h3>
-            <p class="cardDinamica__p">Facilitamos las transferencias de acciones con un enfoque seguro y eficiente. Nuestro equipo experto maneja todos los aspectos del proceso, desde la evaluación de la valoración de acciones hasta la documentación legal. Garantizamos transacciones fluidas y seguras, permitiéndote optimizar la estructura de propiedad de tu empresa con confianza.<p>
-          </div>
-        </div>
-
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Asesoría empresarial</h3>
-            <p class="cardDinamica__p">Nuestra asesoría empresarial va más allá de las cifras; es un compromiso con tu éxito a largo plazo. Desde el análisis financiero hasta la planificación estratégica, nuestro equipo de expertos colabora contigo para identificar oportunidades, mitigar riesgos y optimizar tus operaciones. Confía en nosotros para ser tu socio estratégico, ofreciéndote la orientación necesaria para alcanzar tus objetivos empresarialesOfrecemos asesoría integral para el éxito de tu empresa, desde análisis financiero hasta planificación estratégica. Nuestro equipo de expertos es tu socio estratégico, brindándote la guía necesaria para alcanzar tus objetivos empresariales. Confía en nosotros para optimizar tus operaciones y asegurar un futuro exitoso.<p>
-          </div>
-        </div>
-      
-
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Constitución de Empresas</h3>
-            <p class="cardDinamica__p">Convierte ideas en empresas sólidas con nuestra experiencia desde la concepción hasta la formalización. Simplificamos la creación de tu empresa, liberándote de complicaciones administrativas para que te enfoques en construir tu legado empresarial con confianza.</p>
-          </div>
-        </div>
-      
-
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Compra/venta de empresas</h3>
-            <p class="cardDinamica__p">Explora oportunidades empresariales ilimitadas con nosotros. Simplificamos compras y ventas de empresas, fusionando sueños y realidades. Cada transacción es un paso hacia un futuro próspero, respaldado por nuestra experiencia y compromiso.</p>
-          </div>
-        </div>
-      
-        
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Remoción de Gerencia</h3>
-            <p class="cardDinamica__p">Impulsa un cambio positivo en tu empresa. Removemos gerencias catalizando transformaciones beneficiosas. Toma decisiones audaces para un nuevo comienzo estratégico.</p>
-          </div>
-        </div>
-      
-
-        <div class="cardDinamica">
-
-          <div class="cardDinamica__circulo">
-            <i class="fa-solid fa-coins cardDinamica__i"></i>
-          </div>
-          <div class="cardDinamica__circulo--negro"></div>
-      
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral1">
-            <div class="cardDinamica__background"></div>
-          </div>
-          <div class="cardDinamica__circulo--lateral cardDinamica__circulo--lateral2">
-            <div class="cardDinamica__background cardDinamica__background--2"></div>
-          </div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--1"></div>
-          <div class="cardDinamica__fondo cardDinamica__fondo--2"></div>
-      
-          <div class="cardDinamica__contenido">
-            <h3 class="cardDinamica__h3">Gestión de Activos</h3>
-            <p class="cardDinamica__p">Confía en nosotros para optimizar y salvaguardar tu riqueza. Nuestra gestión de activos va más allá de los números, es un compromiso con tu seguridad financiera. Con estrategias personalizadas, protegemos tus activos, guiándote hacia un futuro financiero próspero y seguro.</p>
-          </div>
-        </div>
-    
+        <button class="popUp__btnCerrar">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
       </div>
-
-      <button class="popUp__btnCerrar">
-        <i class="fa-solid fa-xmark"></i>
-      </button>
     </div>
-  </div>
 
-  <a href="https://wa.me/+51973546593" class="whatsapp-button-container"><i class="fa-brands fa-whatsapp"></i><span class="whatsapp-button-container__text">Contáctanos</span></a>
+    <a href="https://wa.me/+51973546593" class="whatsapp-button-container"><i class="fa-brands fa-whatsapp"></i><span
+        class="whatsapp-button-container__text">Contáctanos</span></a>
 
   </main>
 
@@ -464,7 +529,8 @@
 
     <div class="container__footer">
       <img src="./src/imgs/logo.png" alt="logo">
-      <p>Somos una empresa joven dedicada a la asesoría contable, siempre en busca de ideas innovadoras para brindarte soluciones creativas y ayudarte con nuestros productos en tu trabajo diario.</p>
+      <p>Somos una empresa joven dedicada a la asesoría contable, siempre en busca de ideas innovadoras para brindarte
+        soluciones creativas y ayudarte con nuestros productos en tu trabajo diario.</p>
     </div>
 
 
@@ -472,7 +538,8 @@
       <h3>Contacto</h3>
       <p><i class="fas fa-map-marker-alt"></i> San Andrés 140 - Urb. San Andrés - Trujillo</p>
       <p><i class="fas fa-phone"></i> Telefono: 963839832</p>
-      <p><i class="fas fa-envelope"></i> Email: <a href="mailto:wjzaratevillarreal@gmail.com">wjzaratevillarreal@gmail.com</a></p>
+      <p><i class="fas fa-envelope"></i> Email: <a
+          href="mailto:wjzaratevillarreal@gmail.com">wjzaratevillarreal@gmail.com</a></p>
 
     </div>
 
@@ -483,7 +550,7 @@
       <p><a href="#2">Servicios</a></p>
       <p><a href="#3">Testimonios</a></p>
       <p><a href="#contacto">Contactanos</a></p>
-      
+
     </div>
 
   </footer>
@@ -491,14 +558,15 @@
   <script src="https://kit.fontawesome.com/8d859911a3.js" crossorigin="anonymous"></script>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000,
-            once: true
-        });
-    </script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
 
 
 
 </body>
+
 </html>
